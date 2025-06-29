@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="styleheet" href="stylesheet.css"/>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="formulario">
+        <h1>CADASTRO PESSOAL</h1>
+        <a href="tabela.html">TABELA</a>
+        <form class="nome">
+            <label for="fname">NOME INTEIRO</label><br>
+            <input type="text"></input><br>
+        </form>
+        <form class="genero">
+            <label for="fname">SEXO:</label>
+            <input type="radio" id="feminino" name="genero" value="FEMININO">
+            <label for="fname">FEMININO</label>
+            <input type="radio" id="masculino" name="genero" value="MASCULINO">
+            <label for="fname">MASCULINO</label><BR>
+        </form>
+        <form class="data">
+            <label for="datemax">DATA DE NASCIMENTO:</label><br>
+            <input type="date" id="datemax" name="datemax" min="1999-12-31" max="2025-12-31"></input><br>
+        </form>
+        <form class="phone">
+            <label for="phone">NUMERO DE TELEFONE:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+        </form>
+        <form class="email">
+            <label for="email">EMAIL:</label><br>
+            <input type="email"></input><br>
+        </form>
+        <form class="password">
+            <label for="pwd">SENHA:</label><br>
+            <input type="password" id="pwd" name="pwd"><br>
+        </form>
+        <form class="button">
+            <button type="button" onclick="alert('VALIDAÇÃO CONCLUIDA!!')">VALIDAR</button>
+        </form>
+    </div>
+</body>
+</html>
